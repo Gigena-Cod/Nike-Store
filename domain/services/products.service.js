@@ -47,12 +47,18 @@ export class ProductsService {
   }
 
   // Simula una petición que tarda 1 segundo en devolver todas las zapatillas
-  async getAllProducts() {    
-    const response = await new Promise((resolve) => {
+  async getAllProducts(getAllProductsProps) {
+    const { category } = getAllProductsProps;
+
+    const request = await new Promise((resolve) => {
       setTimeout(() => {
         resolve(this.zapatillas);
       }, 1000);
     });
+
+    const response = category
+      ? request.filter((zapa) => zapa.categoty === category)
+      : request;
 
     return response;
   }

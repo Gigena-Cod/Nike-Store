@@ -17,8 +17,8 @@ function renderHeader() {
       <li class="dropdown">
         <a href="#">Categorías</a>
         <ul class="dropdown-menu">
-          <li><a href="#">Hombre</a></li>
-          <li><a href="#">Mujer</a></li>
+          <li><a href="../ProductsMen/ProductsMen.features.html">Hombre</a></li>
+          <li><a href="../ProductsWomen/ProductsWomen.features.html">Mujer</a></li>
         </ul>
       </li>
     </ul>

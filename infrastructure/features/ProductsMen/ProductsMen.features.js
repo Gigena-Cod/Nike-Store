@@ -8,7 +8,9 @@ async function mostrarZapatillas() {
   loading.style.display = "grid";
   contenedor.style.display = "none";
 
-  const zapatillas = await service.getAllProducts({ categoty: null });
+  const zapatillas = await service.getAllProducts({
+    category: "men",
+  });
 
   zapatillas.forEach((zapa) => {
     contenedor.innerHTML += `
