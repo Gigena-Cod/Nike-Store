@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Argentina - Sign In</title>
+    <link rel="stylesheet" href="./SignIn.features.css" />
+    <link
+      data-react-helmet="true"
+      rel="icon"
+      type="image/png"
+      href="https://nikearprod.vteximg.com.br/arquivos/favicon-32x32.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex flex-col items-center gap-2 titleWrapper">
+        <span class="text-2xl font-bold title">Iniciar sesión</span>
+        <span class="text-xs text-gray-500 subtitle">
+          Ingresa tus credenciales para iniciar sesión</span
+        >
+      </div>
+      <form class="flex flex-col items-center gap-4 w-90">
+        <div class="w-full flex flex-col gap-1 emailWrapper">
+          <label class="text-xs text-gray-500" for="email">Email</label>
+          <input
+            class="text-gray-500 text-xs placeholder:text-xs! focus-within:outline-1 focus-within:outline-gray-600 border p-2 border-gray-300 rounded-md h-9 input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Escribe aqui"
+          />
+        </div>
+        <div class="w-full flex flex-col gap-1 passwordWrapper">
+          <label class="text-xs text-gray-500" for="password">Contraseña</label>
+          <input
+            class="text-gray-500 text-xs placeholder:text-xs! focus-within:outline-1 focus-within:outline-gray-600 border p-2 border-gray-300 rounded-md h-9 input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Escribe aqui"
+          />
+        </div>
+        <div class="w-full mt-3 mb-4 flex justify-between sectionWrapper">
+          <div class="flex items-center gap-1 rememberWrapper">
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              name="remember"
+              id="remember"
+            />
+            <label class="text-xs text-gray-500 rounded-full" for="remember">
+              Recordarme
+            </label>
+          </div>
+
+          <div class="flex align-center gap-1 forgotPassowrd">
+            <svg
+              class="h-4"
+              color="#6a6a6a"
+              variant="small"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                d="M256 341.333c0-141.385 114.615-256 256-256s256 114.615 256 256v49.080c12.058 2.642 23.633 6.49 34.816 12.188 32.111 16.363 58.219 42.472 74.581 74.583 10.551 20.71 14.758 42.756 16.717 66.739 1.886 23.091 1.886 51.435 1.886 85.781v63.258c0 34.347 0 62.69-1.886 85.781-1.958 23.983-6.165 46.029-16.717 66.739-16.363 32.111-42.47 58.219-74.581 74.581-20.71 10.551-42.756 14.758-66.739 16.717-23.091 1.886-51.435 1.886-85.781 1.886h-276.592c-34.345 0-62.691 0-85.782-1.886-23.983-1.958-46.029-6.165-66.736-16.717-32.113-16.363-58.222-42.47-74.584-74.581-10.551-20.71-14.756-42.756-16.716-66.739-1.886-23.091-1.886-51.435-1.885-85.781v-63.258c-0-34.347-0.001-62.69 1.885-85.781 1.96-23.983 6.165-46.029 16.716-66.739 16.363-32.111 42.471-58.22 74.584-74.583 11.183-5.698 22.756-9.545 34.814-12.188v-49.080zM341.333 384.070c10.142-0.070 20.924-0.070 32.371-0.070h276.591c11.447 0 22.229-0 32.371 0.070v-42.736c0-94.257-76.412-170.667-170.667-170.667-94.257 0-170.667 76.41-170.667 170.667v42.736zM294.871 470.938c-18.706 1.527-28.272 4.297-34.945 7.697-16.056 8.179-29.111 21.235-37.292 37.291-3.4 6.673-6.17 16.239-7.699 34.944-1.569 19.204-1.602 44.049-1.602 80.597v59.733c0 36.548 0.033 61.393 1.602 80.597 1.528 18.705 4.299 28.271 7.699 34.944 8.181 16.055 21.236 29.111 37.292 37.291 6.673 3.401 16.239 6.17 34.945 7.697 19.204 1.57 44.048 1.604 80.596 1.604h273.067c36.548 0 61.393-0.034 80.597-1.604 18.705-1.527 28.271-4.297 34.944-7.697 16.055-8.179 29.111-21.235 37.291-37.291 3.401-6.673 6.17-16.239 7.697-34.944 1.57-19.204 1.604-44.049 1.604-80.597v-59.733c0-36.548-0.034-61.393-1.604-80.597-1.527-18.705-4.297-28.271-7.697-34.944-8.179-16.055-21.235-29.111-37.291-37.291-6.673-3.401-16.239-6.17-34.944-7.697-19.204-1.57-44.049-1.604-80.597-1.604h-273.067c-36.547 0-61.392 0.034-80.596 1.604zM512 576c23.565 0 42.667 19.102 42.667 42.667v85.333c0 23.565-19.102 42.667-42.667 42.667s-42.667-19.102-42.667-42.667v-85.333c0-23.565 19.102-42.667 42.667-42.667z"
+                fill="rgb(189, 189, 189)"
+              ></path>
+            </svg>
+            <a href="" class="underline text-xs text-gray-500">
+              ¿Olvidaste tu contraseña?</a
+            >
+          </div>
+        </div>
+        <button
+          class="cursor-pointer text-xs text-white bg-black p-2 rounded-md w-full h-9"
+        >
+          Iniciar Sesión
+        </button>
+        <div class="w-full flex flex-col align-center text-center termsConditionsWrapper">
+          <span class="text-gray-500"
+            >Iniciando sesión estás indicando que aceptas nuestros</span
+          >
+          <span class=" text-gray-500"
+            >Términos y condiciones de servicio y nuestra Política de
+            privacidad</span
+          >
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="../../components/Header/Header.component.js"></script>
+  <link rel="stylesheet" href="../../components/Header/Header.component.css" />
+  <link rel="stylesheet" href="../../styles/globals.css" />
+</html>
