@@ -50,3 +50,44 @@
   margin-top: 0.75rem;
   margin-bottom: 0.25rem;
 }
+
+/* Skeleton Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+/* Skeleton base */
+.skeleton {
+  animation: shimmer 1.5s infinite linear;
+  background-size: 800px 100px;
+}
+
+/* Imagen placeholder */
+.skeleton-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 0.25rem;
+  background-color: #eee;
+}
+
+/* Texto placeholder */
+.skeleton-text {
+  height: 16px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+  background-color: #eee;
+}
+
+.skeleton-text.short {
+  width: 50%;
+}
+
+.skeleton-text.long {
+  width: 80%;
+}
