@@ -1,7 +1,7 @@
 header {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 92px  !important;
+  height: 92px !important;
   max-height: 92px !important;
   min-height: 92px !important;
   display: flex;
@@ -23,7 +23,7 @@ header {
 }
 
 .nav-links li a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #333;
   font-weight: bold;
   transition: color 0.2s ease;
@@ -58,7 +58,6 @@ li {
   position: relative;
 }
 
-/* Estilo para el dropdown */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -71,24 +70,19 @@ li {
   padding: 0;
 }
 
-/* Las opciones se apilan una debajo de otra */
 .dropdown-menu li {
   display: block;
 }
 
-/* Mostrar el dropdown cuando se pase el mouse por encima */
 .dropdown:hover .dropdown-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem ;
 }
 
-/* Estilos para los enlaces */
 a {
   display: block;
   padding: 8px 16px;
   text-decoration: none;
   color: black;
-}
-
-a:hover {
-  background-color: #ddd;
 }
