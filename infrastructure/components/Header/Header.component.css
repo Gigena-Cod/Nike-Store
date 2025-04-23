@@ -1,6 +1,11 @@
 header {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 92px  !important;
+  max-height: 92px !important;
+  min-height: 92px !important;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar {
@@ -8,6 +13,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
+  width: 100%;
 }
 
 .nav-links {
