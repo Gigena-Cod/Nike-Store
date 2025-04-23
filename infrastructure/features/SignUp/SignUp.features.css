@@ -1,12 +1,44 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100vh;
-    font-size: 14px;
-    color: rgb(51, 51, 51);
-    
-    overflow: hidden;
-    min-height: 650px;
-    font-family: "DM Sans", sans-serif !important;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 1.75rem;
+  margin: auto;
+}
+
+.custom-checkbox {
+  appearance: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 1px solid #6b7280; /* gris similar a text-gray-500 */
+  border-radius: 100%; /* redondeado */
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-checkbox:checked {
+  background-color: black; /* por ejemplo indigo-600 */
+  border-color: black;
+}
+
+.custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.termsConditionsWrapper {
+  font-size: 10px;
+}

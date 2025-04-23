@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nike Argentina - Sign Up</title>
+    <title>Nike Argentina - Iniciar Sesion</title>
     <link rel="stylesheet" href="./SignUp.features.css" />
     <link
       data-react-helmet="true"
@@ -11,12 +11,106 @@
       type="image/png"
       href="https://nikearprod.vteximg.com.br/arquivos/favicon-32x32.png"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Sign Up</h1>
+      <div class="flex flex-col items-center gap-2 titleWrapper">
+        <span class="text-2xl font-bold title">Crear cuenta</span>
+        <span class="text-xs text-gray-500 subtitle">
+          Completa los campos para registrarte en la plataforma
+        </span>
+      </div>
+
+      <form class="grid grid-cols-2 items-center gap-4 w-180">
+        <div class="w-full flex flex-col gap-1 nameWrapper">
+          <label class="text-xs text-gray-500" for="name">Nombre</label>
+          <input
+            class="text-gray-500 text-xs placeholder:text-xs! focus-within:outline-1 focus-within:outline-gray-600 border p-2 border-gray-300 rounded-md h-9 input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Escribe tu nombre"
+          />
+        </div>
+
+        <div class="w-full flex flex-col gap-1 lastNameWrapper">
+          <label class="text-xs text-gray-500" for="lastName">Apellido</label>
+          <input
+            class="text-gray-500 text-xs placeholder:text-xs! focus-within:outline-1 focus-within:outline-gray-600 border p-2 border-gray-300 rounded-md h-9 input"
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Escribe tu apellido"
+          />
+        </div>
+
+        <div class="w-full flex flex-col gap-1 emailWrapper">
+          <label class="text-xs text-gray-500" for="email">Email</label>
+          <input
+            class="text-gray-500 text-xs placeholder:text-xs! focus-within:outline-1 focus-within:outline-gray-600 border p-2 border-gray-300 rounded-md h-9 input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Escribe tu email"
+          />
+        </div>
+
+        <div class="w-full flex flex-col gap-1 phoneWrapper">
+          <label class="text-xs text-gray-500" for="phone">Teléfono</label>
+          <input
+            class="text-gray-500 text-xs placeholder:text-xs! focus-within:outline-1 focus-within:outline-gray-600 border p-2 border-gray-300 rounded-md h-9 input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Ej: 3511234567"
+          />
+        </div>
+
+        <div class="w-full flex flex-col gap-1 passwordWrapper">
+          <label class="text-xs text-gray-500" for="password">Contraseña</label>
+          <input
+            class="text-gray-500 text-xs placeholder:text-xs! focus-within:outline-1 focus-within:outline-gray-600 border p-2 border-gray-300 rounded-md h-9 input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Escribe tu contraseña"
+          />
+        </div>
+        <div class="w-full flex flex-col gap-1 passwordWrapper">
+          <label class="text-xs text-gray-500" for="password">Contraseña</label>
+          <input
+            class="text-gray-500 text-xs placeholder:text-xs! focus-within:outline-1 focus-within:outline-gray-600 border p-2 border-gray-300 rounded-md h-9 input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Escribe tu contraseña"
+          />
+        </div>
+
+        <div class="mt-4 col-span-full flex justify-end buttonWrapper">
+          <button
+            class="w-90 m-auto cursor-pointer text-xs text-white bg-black p-2 rounded-md h-9"
+          >
+            Crear cuenta
+          </button>
+        </div>
+
+        <div
+          class="col-span-2 w-full flex flex-col align-center text-center termsConditionsWrapper"
+        >
+          <span class="text-gray-500"
+            >Registrándote estás aceptando nuestros</span
+          >
+          <span class="text-gray-500"
+            >Términos y condiciones de servicio y nuestra Política de
+            privacidad</span
+          >
+        </div>
+      </form>
     </div>
   </body>
   <script src="../../components/Header/Header.component.js"></script>
   <link rel="stylesheet" href="../../components/Header/Header.component.css" />
+  <link rel="stylesheet" href="../../styles/globals.css" />
 </html>
