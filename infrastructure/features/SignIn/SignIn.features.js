@@ -1,25 +1,11 @@
 /**
- * Sets a cookie with the specified name, value, and expiration days.
- * 
- * @param {string} name - The name of the cookie
- * @param {string} value - The value to store in the cookie
- * @param {number} days - Number of days until the cookie expires
- */
-function setCookie(name, value, days) {
-    const d = new Date();
-    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
-    const expires = "expires=" + d.toUTCString();
-    document.cookie = name + "=" + value + ";" + expires + ";path=/";
-}
-
-/**
  * Handles the form submission event.
  * 
  * @param {Event} e - The form submission event
  */
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form');
-    const validEmails = ['nahuel.gigena98@gmail.com', 'admin@gmail.com'];
+    const validEmails = ['nahuel.gigena98@gmail.com', 'admin'];
     const validPassword = 'admin';
     const token = 'UMq2B4abp76i1q7iIAX0B0Fv0YVCOhaFPRgW7iyB53TjzuZ2xq4SkogWmwHfsmMD';
 
@@ -33,7 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (validEmails.includes(email) && password === validPassword) {
 
-                setCookie('nike_token', token, remember ? 7 : 1);
+                const d = new Date();
+                d.setTime(d.getTime() + (remember ? 7 : 1) * 24 * 60 * 60 * 1000);
+                const expires = "expires=" + d.toUTCString();
+                document.cookie = 'nike_token=' + token + ';' + expires + ';path=/';
 
                 window.location.href = '../Home/Home.features.html';
             } else {
