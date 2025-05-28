@@ -15,10 +15,10 @@ function renderHeader() {
       </svg>
     </a>
     <ul class="nav-links">
-      ${isLoggedIn ? '' : '<li><a href="../../SignUp/SignUp.features.html">Sign Up</a></li>'}
-      ${isLoggedIn ? '' : '<li><a href="../../SignIn/SignIn.features.html">Sign In</a></li>'}
+      ${isLoggedIn ? '' : '<li><a href="../../features/SignUp/SignUp.features.html">Sign Up</a></li>'}
+      ${isLoggedIn ? '' : '<li><a href="../../features/SignIn/SignIn.features.html">Sign In</a></li>'}
       ${isLoggedIn ? '<li><a href="#" id="logout-link">Logout</a></li>' : ''}
-      ${isLoggedIn ? '<li class="dropdown"><a href="#">Categorías</a><ul class="dropdown-menu"> <li><a href="../../ProductsMen/ProductsMen.features.html">Hombre</a></li><li><a href="../../ProductsWomen/ProductsWomen.features.html">Mujer</a></li></ul></li>' : ''}
+      ${isLoggedIn ? '<li class="dropdown"><a href="#">Categorías</a><ul class="dropdown-menu"> <li><a href="../../features/ProductsMen/ProductsMen.features.html">Hombre</a></li><li><a href="../../features/ProductsWomen/ProductsWomen.features.html">Mujer</a></li></ul></li>' : ''}
     </ul>
   </nav>
   <link rel="stylesheet" href="./Header.component.css">
