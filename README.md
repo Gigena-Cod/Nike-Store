@@ -21,6 +21,15 @@ Todos los datos (productos y usuarios) están **mockeados** y las funcionalidade
 
 ---
 
+### 🧩 Versión: 1.1 - Tercera Entrega
+
+#### 🛠️ Descripción General
+
+- Implementación de sistema de autenticación básico
+  - Validación de cookies en todas las páginas protegidas
+  - Redirección automática a página de inicio de sesión
+  - Actualización de rutas en el header para mejor organización
+
 ### 🔍 Features actuales
 
 #### 1. **Home pública (sin login)**
