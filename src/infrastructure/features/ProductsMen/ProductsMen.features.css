@@ -9,7 +9,8 @@
   box-sizing: border-box;
   overflow-y: auto;
   overflow-x: hidden;
-  flex: 1;
+  flex: 1;   
+  justify-content: center;
 }
 
 @media (min-width: 480px) {
@@ -19,16 +20,11 @@
 }
 
 @media (min-width: 768px) {
-  .sneakersWrapper {
-    grid-template-columns: repeat(3, 1fr);
+  .sneakersWrapper { 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+    gap: 1rem;
   }
-}
-
-@media (min-width: 1024px) {
-  .sneakersWrapper {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+} 
 
 .sneakerCard {
   border-top-right-radius: 0.25rem;
@@ -37,14 +33,20 @@
   transition: transform 0.2s ease;
   box-sizing: border-box;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 
-.sneakerCard > img {
-  width: 100%;
-  background-color: #f6f6f6;
-  height: auto;
-  border-radius: 0.25rem;
-}
+.sneakerCard > .skeleton-img {
+    width: 100%;
+    height: 14rem;
+    max-height: 14rem;
+    border-radius: 0.25rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f6f6f6;
+  }
 
 .sneakerCard > h3 {
   margin-top: 0.75rem;
