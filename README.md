@@ -30,6 +30,15 @@ Todos los datos (productos y usuarios) están **mockeados** y las funcionalidade
   - Redirección automática a página de inicio de sesión
   - Actualización de rutas en el header para mejor organización
 
+---
+### 🧩 Versión: 1.2 - Cuarta Entrega
+
+#### 🛠️ Descripción General
+
+-  Implementacion de botones de suma y resta para la cantidad de productos
+-  Implementacion de una abse de datos para los productos
+-  Refactorizacion del codigo
+
 ### 🔍 Features actuales
 
 #### 1. **Home pública (sin login)**
