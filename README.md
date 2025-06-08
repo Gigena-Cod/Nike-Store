@@ -36,8 +36,10 @@ Todos los datos (productos y usuarios) están **mockeados** y las funcionalidade
 #### 🛠️ Descripción General
 
 -  Implementacion de botones de suma y resta para la cantidad de productos
--  Implementacion de una abse de datos para los productos
+-  Implementacion de una base de datos para los productos
+-  Implementacion package.json para levantar el servidor
 -  Refactorizacion del codigo
+
 
 ### 🔍 Features actuales
 
