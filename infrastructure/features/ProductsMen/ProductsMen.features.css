@@ -21,7 +21,8 @@
 
 @media (min-width: 768px) {
   .sneakersWrapper { 
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+    gap: 1rem;
   }
 } 
 

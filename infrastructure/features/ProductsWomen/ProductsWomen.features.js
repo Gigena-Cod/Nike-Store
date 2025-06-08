@@ -2,7 +2,7 @@
  * Module that handles the home page functionality
  * @module HomeFeatures
  */
-import { ProductsService } from "../../../domain/services/Products/products.service.js";
+import { ProductsService } from "../../../domain/services/Products/Products.service.js";
 
 /**
  * Service to handle product operations
