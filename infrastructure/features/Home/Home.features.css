@@ -9,7 +9,8 @@
   box-sizing: border-box;
   overflow-y: auto;
   overflow-x: hidden;
-  flex: 1;
+  flex: 1;   
+  justify-content: center;
 }
 
 @media (min-width: 480px) {
@@ -19,16 +20,10 @@
 }
 
 @media (min-width: 768px) {
-  .sneakersWrapper {
-    grid-template-columns: repeat(3, 1fr);
+  .sneakersWrapper { 
+    grid-template-columns: repeat(3, 400px);
   }
-}
-
-@media (min-width: 1024px) {
-  .sneakersWrapper {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+} 
 
 .sneakerCard {
   border-top-right-radius: 0.25rem;
