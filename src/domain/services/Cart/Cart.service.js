@@ -118,13 +118,11 @@ export class CartService {
    * @param {number} quantity - Quantity to add
    * @returns {Promise<number>} ID of the added item
    */
-  async addProduct(product, quantity = 1) {
+  async addProduct(product, quantity = 1) {    
+    
     const cartItem = {
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      image: product.image,
-      quantity: quantity,
+      ...product,
+      quantity,
       createdAt: new Date().toISOString()
     };
     return this.database.add(cartItem);
