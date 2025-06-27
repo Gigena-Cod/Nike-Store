@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Argentina</title>
+    <link rel="stylesheet" href="./Cart.features.css" />
+    <link rel="stylesheet" href="../../styles/globals.css" />
+    <link
+      data-react-helmet="true"
+      rel="icon"
+      type="image/png"
+      href="https://nikearprod.vteximg.com.br/arquivos/favicon-32x32.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../../helpers/auth.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <span class="font-bold text-2xl">Mi carrito</span>
+      </div>
+      <div id="loading"></div>
+      <div id="products-list"></div>
+      <div id="total"></div>
+    </div>
+    <script type="module" src="./Cart.features.js"></script>
+  </body>
+  <script src="../../components/Header/Header.component.js"></script>
+  <script>
+    // Verificar autenticación al cargar la página
+    document.addEventListener("DOMContentLoaded", function () {
+      redirectIfNotAuth();
+    });
+  </script>
+  <link rel="stylesheet" href="../../components/Header/Header.component.css" />
+  <link rel="stylesheet" href="../../styles/globals.css" />
+</html>
