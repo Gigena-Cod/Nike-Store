@@ -2,6 +2,7 @@
  * Module that handles the home page functionality
  * @module HomeFeatures
  */
+import { CartService } from "../../../domain/services/Cart/Cart.service.js";
 import { ProductsService } from "../../../domain/services/Products/Products.service.js";
 
 /**
@@ -111,7 +112,7 @@ async function mostrarZapatillas() {
    * @param {HTMLElement} btn - The add to cart button
    */
   document.querySelectorAll(".add-to-cart").forEach((btn) => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", async () => {
       // Extract button ID
       const id = btn.id.replace("addToCart", "");
       console.log("Button ID:", id);
@@ -138,6 +139,10 @@ async function mostrarZapatillas() {
 
       console.log("Product found:", producto);
       console.log("Selected quantity:", quantity.textContent);
+
+      const cartService = new CartService();
+      await cartService.init();
+      await cartService.addProduct(producto, parseInt(quantity.textContent));
     });
   });
 
