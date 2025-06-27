@@ -63,6 +63,12 @@ Todos los datos (productos y usuarios) están **mockeados** y las funcionalidade
 - Checkbox para aceptar términos y condiciones.
 - Mensaje legal sobre aceptación de políticas de privacidad.
 
+#### 4. **Vista de Carrito (Cart)**
+- Visualización de todos los productos agregados al carrito.
+- Carga simulada desde un servicio con **retardo artificial de 1 segundo** (`ProductsService`).
+- Inclusión de **loader visual (skeleton loader)** mientras se cargan los productos.
+- Botones de suma y resta para la cantidad de productos.
+
 ---
 
 ### 🧪 Tecnologías utilizadas
