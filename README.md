@@ -40,6 +40,17 @@ Todos los datos (productos y usuarios) están **mockeados** y las funcionalidade
 -  Implementacion package.json para levantar el servidor
 -  Refactorizacion del codigo
 
+### 🧩 Versión: 1.3 - Quinta Entrega
+
+#### 🛠️ Descripción General
+
+-  Implementacion de un carrito de compras
+-  Implementacion de un checkout
+-  Implementacion de un sistema de pagos
+-  Implementacion de un sistema de envio
+-  Implementacion de un sistema de facturacion
+
+
 
 ### 🔍 Features actuales
 
