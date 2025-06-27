@@ -107,7 +107,7 @@ async function obtenerProducts() {
           style: "currency",
           currency: "ARS",
         })}</span>
-        <button id="checkout-button" class="h-10 bg-black text-white w-full checkout-button">Finalizar compra</button>
+        <button id="checkout-button" class=" cursor-pointer h-10 bg-black text-white w-full checkout-button">Finalizar compra</button>
         <a class="h-10 !flex !items-center !justify-center bg-black !text-white !decoration-none !no-underline w-full checkout-button" href="../Home/Home.features.html">Continuar comprando</a>
       </div>
     `;
@@ -137,7 +137,7 @@ async function obtenerProducts() {
                 currency: "ARS",
               }
             )}</span>
-            <button id="checkout-button" class="h-10 bg-black text-white w-full">Finalizar compra</button>
+            <button id="checkout-button" class=" cursor-pointer h-10 bg-black text-white w-full">Finalizar compra</button>
             <a class="h-10 !flex !items-center !justify-center bg-black !text-white !decoration-none !no-underline w-full " href="../Home/Home.features.html">Continuar comprando</a>
           </div>
         `;
@@ -168,7 +168,6 @@ async function obtenerProducts() {
     // Agregar event listeners para los botones de eliminar
     document.querySelectorAll(".delete").forEach((btn) => {
       btn.addEventListener("click", () => {
-        ;
         const id = btn.id.replace("delete", "");
         cartService.removeProduct(id);
         refreshCheckout();
